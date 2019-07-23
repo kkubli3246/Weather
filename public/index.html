@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <script defer src='https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js'></script>
+    <script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA878oM4CekG1Lk_ILh63g54NmD6mGtXf4&libraries=places"></script>
+    <script defer src="script.js"> </script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class= "container">
+        <div class="header">
+            <div class="icon"><canvas id="icon" height="100" width="100"></canvas></div>
+        </div>
+        <div class="content">
+            <div class="general-info">
+                <div class="status" data-status>Enter a Location</div>
+                <div class="location" data-location>To find the Weather</div>
+            </div>
+        </div>  
+        <div class="weather-details">
+            <div class="detail">
+                <div class="detail-title">WIND</div>
+                <div class="value" data-wind>TBD</div>
+            </div>
+            <div class="detail">
+                    <div class="detail-title">TEMPERATURE</div>
+                    <div class="value" data-temperature>TBD</div>
+            </div>
+            <div class="detail">
+                    <div class="detail-title">PRECIPITATION</div>
+                    <div class="value" data-precipitation>TBD</div>
+            </div>
+        </div>
+
+        <div class="city-search-container">
+            <input type="text" class="city-search" data-city-search placeholder="Enter Location"></div>
+        </div>
+    </div>
+    <a href="https://darksky.net/poweredby" class="darksky-logo">Powered By Dark Sky</a>
+</body>
+</html>
