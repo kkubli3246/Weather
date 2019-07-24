@@ -1,0 +1,120 @@
+*, *::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(white,orange);
+}
+
+.container{
+    max-width: 90%;
+    width: 1000px;
+    box-shadow: 0px 5px 10px black;
+    border-radius: 10px;
+    background: white;
+}
+.content{
+    padding: 40px;
+    margin-top: 50px; 
+}
+
+.header{
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px 10px 0 0; 
+}
+
+.icon{
+    position: relative;
+    top: 70px;
+    padding: 20px;
+    background-color: white;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.general-info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.status{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.location{
+    font-size: 2rem;
+    font-weight: normal;
+}
+.weather-details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 15px;
+}
+.detail-title{
+    font-size: 2rem;
+    font-weight: bold;
+    font: grey;
+}
+.value{
+    font-size: 2rem;
+    margin-top:15px;
+}
+
+.detail.bordered{
+    border-left: solid gray 1px; 
+    border-right: solid gray 1px; 
+}
+
+.city-search-container{
+    display:flex;
+    justify-content: center;
+}
+
+.city-search{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    outline: none;
+    border: 1px solid #222;
+    padding: 5px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.pac-item{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.pac-item-query{
+    font-size: 1.5rem;
+}
+.pac.icon{
+    display: none;
+}
+.darksky-logo{
+    position: absolute;
+    bottom: 20px;
+    right:20px;
+    color: #333;
+}
